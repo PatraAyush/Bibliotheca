@@ -1,0 +1,115 @@
+/* Background Image */
+.home-background {
+  background-image: url('/src/assets/bg.jpg'); /* Path for Vite's asset handling */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  position: fixed; /* Fixed position for consistent background */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place it behind other elements */
+}
+
+/* Main Container */
+.home-container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  color: #fff; /* White text for readability */
+  position: relative; /* Enable layering with z-index */
+  background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  padding: 2rem; /* Add some padding */
+  box-sizing: border-box;
+}
+
+/* Navigation Styles */
+header {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #1e90ff; /* Light blue on hover */
+}
+
+/* Sign-Up & Sign-In Links */
+.Sign {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.Sign li {
+  margin: 0;
+}
+
+.Sign li a {
+  color: #fff;
+  background: #1e90ff; /* Light blue background */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Sign li a:hover {
+  background: #0d74ce; /* Darker blue on hover */
+}
+
+/* Header Section */
+.home-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff; /* White text for visibility */
+  margin-bottom: 1rem;
+}
+
+/* Section Content */
+.home-content {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  color: #f1f1f1; 
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+.home-content p {
+  margin-bottom: 1rem;
+}
+
+.home-content a {
+  margin-left: 70%;
+  color: rgb(25, 75, 166);
+}
+
+.home-content a:hover {
+  text-decoration: underline;
+}
